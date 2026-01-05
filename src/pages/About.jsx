@@ -13,14 +13,14 @@ import SectionTitle from "../components/SectionTitle";
 const photos = [
   "/images/photo1.jpg",
   "/images/photo2.jpg",
-  "/images/photo3.JPG",
+  "/images/photo20.JPG",
   "/images/photo4.JPG",
   "/images/photo5.JPG",
-  "/images/photo6.JPG",
-  "/images/photo7.JPG",
-  "/images/photo8.JPG",
-  "/images/photo9.JPG",
-  "/images/photo10.JPG",
+  "/images/photo14.jpg",
+  "/images/photo12.jpg",
+  "/images/photo15.jpg",
+  "/images/photo11.jpg",
+  "/images/photo13.jpg",
 ];
 
 export default function About() {

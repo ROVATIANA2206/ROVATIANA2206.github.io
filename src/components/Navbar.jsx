@@ -10,6 +10,7 @@ export default function Navbar() {
     { to: '/', label: 'Accueil' },
     { to: '/skills', label: 'Compétences' },
     { to: '/projects', label: 'Projets' },
+    { to: '/certifications', label: 'Certifications' },
     { to: '/about', label: 'À propos' },
   ];
 
