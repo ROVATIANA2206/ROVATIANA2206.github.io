@@ -70,7 +70,7 @@ export default function About() {
           </a>
 
           <a
-            href="/docs/cv-2025.pdf"
+            href="/docs/CV_Niriniaina_Rovatiana.pdf"
             download
             className="flex items-center gap-2 px-6 py-3 border border-indigo-400 text-indigo-300 hover:bg-indigo-400/10 font-semibold rounded-xl transition"
           >
