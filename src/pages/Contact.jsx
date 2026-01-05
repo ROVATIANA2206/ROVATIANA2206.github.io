@@ -14,6 +14,9 @@ export default function Contact() {
     hover: { scale: 1.03, transition: { duration: 0.3 } },
   };
 
+  // Lien Gmail direct pour composer un mail
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`;
+
   return (
     <section className="container mx-auto py-16 px-4 md:py-20">
       <SectionTitle
@@ -63,7 +66,9 @@ export default function Contact() {
           <p className="flex items-center gap-3 text-gray-300">
             <span className="text-cyan-400 text-lg">📧</span>
             <a
-              href={`mailto:${profile.email}`}
+              href={gmailLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-white transition-colors duration-300"
             >
               {profile.email}
@@ -93,22 +98,24 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* Bouton mailto */}
+        {/* Bouton Gmail */}
         <motion.div
           className="bg-gray-900/70 backdrop-blur-xl p-8 rounded-3xl border border-gray-700 shadow-xl flex flex-col items-center justify-center gap-6"
           variants={cardVariants}
           whileHover="hover"
         >
-          <h3 className="text-2xl font-semibold text-white">Envoyer un email</h3>
+          <h3 className="text-2xl font-semibold text-white">Envoyer un email via Gmail</h3>
           <p className="text-gray-300 text-center">
-            Cliquez sur le bouton ci-dessous pour ouvrir votre client mail et m'envoyer un message directement.
+            Cliquez sur le bouton ci-dessous pour ouvrir Gmail et composer un email directement à mon adresse.
           </p>
 
           <a
-            href={`mailto:rovatiananiriniaina1@gmail.com`}
+            href={gmailLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn w-full md:w-auto text-center py-3 px-6 rounded-xl bg-gradient-to-r from-[#8B5CF6] to-[#4F46E5] hover:from-[#4F46E5] hover:to-[#8B5CF6] text-white font-medium transition-all duration-300"
           >
-            Envoyer un email
+            Ouvrir Gmail
           </a>
         </motion.div>
       </motion.div>
