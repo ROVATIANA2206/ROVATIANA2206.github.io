@@ -1,6 +1,5 @@
 import profile from '../data/profile';
 import SectionTitle from '../components/SectionTitle';
-import ContactForm from '../components/ContactForm';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -20,7 +19,7 @@ export default function Contact() {
       <SectionTitle
         eyebrow="Contact"
         title="Parlons de votre projet"
-        subtitle="Je réponds rapidement par téléphone, email ou via le formulaire ci-dessous."
+        subtitle="Je réponds rapidement par téléphone, email ou via le bouton ci-dessous."
       />
 
       <motion.div
@@ -94,13 +93,23 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* Formulaire de contact */}
+        {/* Bouton mailto */}
         <motion.div
-          className="bg-gray-900/70 backdrop-blur-xl p-8 rounded-3xl border border-gray-700 shadow-xl"
+          className="bg-gray-900/70 backdrop-blur-xl p-8 rounded-3xl border border-gray-700 shadow-xl flex flex-col items-center justify-center gap-6"
           variants={cardVariants}
           whileHover="hover"
         >
-          <ContactForm />
+          <h3 className="text-2xl font-semibold text-white">Envoyer un email</h3>
+          <p className="text-gray-300 text-center">
+            Cliquez sur le bouton ci-dessous pour ouvrir votre client mail et m'envoyer un message directement.
+          </p>
+
+          <a
+            href={`mailto:rovatiananiriniaina1@gmail.com`}
+            className="btn w-full md:w-auto text-center py-3 px-6 rounded-xl bg-gradient-to-r from-[#8B5CF6] to-[#4F46E5] hover:from-[#4F46E5] hover:to-[#8B5CF6] text-white font-medium transition-all duration-300"
+          >
+            Envoyer un email
+          </a>
         </motion.div>
       </motion.div>
     </section>
